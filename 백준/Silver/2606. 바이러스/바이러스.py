@@ -1,4 +1,3 @@
-
 n = int(input())
 m = int(input())
 
@@ -9,8 +8,8 @@ for i in range(m):
     emplist[x].append(y)
     emplist[y].append(x)
 
-# virus = [0 for _ in range(n)]
-virus = [0]*(n+1)
+virus = [0 for _ in range(n+1)]
+# virus = [0]*(n+1)
 
 def virusdfs(demplist, v, dvirus):
     virus[v] = 1
